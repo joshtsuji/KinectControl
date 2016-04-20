@@ -1,0 +1,41 @@
+﻿<grammar version="1.0" xml:lang="en-US" root="rootRule" tag-format="semantics/1.0-literals" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <tag>LIGHTSON</tag>
+        <one-of>
+          <item> computer, lights on </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>LIGHTSOFF</tag>
+        <one-of>
+          <item> computer, lights off </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>LIGHTSSUNSET</tag> 
+        <one-of>
+          <item> change lights to sunset </item>
+          <item> change scene to sunset </item>
+          <item> computer, sunset lighting </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>NIGHTMODE</tag>
+        <one-of>
+          <item> change lights to night mode </item>
+          <item> computer, night mode </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>LIGHTSTURQUOISE</tag>
+        <one-of>
+          <item> change lights to turquoise </item>
+          <item> change scene to turquoise </item>
+          <item> computer, turquoise lighting </item>
+        </one-of>
+      </item>
+    </one-of>
+  </rule>
+</grammar>
